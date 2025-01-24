@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handwritten Form to CSV - Result</title>
+</head>
+<body>
+    <h1>Conversion Result</h1>
+    
+    <!-- Display clarity message -->
+    <h3 style="color: red;">{{ clarity_message }}</h3>
+
+    {% if clarity_message == 'Image is clear' %}
+    <h3>Download the CSV:</h3>
+    <a href="{{ csv_path }}" download="output.csv">Download CSV</a>
+    {% endif %}
+    
+</body>
+</html>
